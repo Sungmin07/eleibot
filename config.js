@@ -14,7 +14,7 @@ global.BotName = "Kira🍎"
 global.packname = "Kira bot"
 global.author = "By : asashi kun"
 global.OwnerName = "Asashi-kun❤️"
-global.BotSourceCode = "asashi-kun se mang🐦"
+global.BotSourceCode = "https://www.instagram.com/asashi_kunn/"
 global.SupportGroupLink = "https://chat.whatsapp.com/G89MF8YbNPt2zOdF6HItyD"
 global.sessionName = "session"
 
