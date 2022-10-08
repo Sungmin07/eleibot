@@ -7,15 +7,15 @@ global.autoReadAll = false
 global.antitags = true
 
 
-global.Owner = ['15069751205']
-global.OwnerNumber = ['15069751205']
-global.ownertag = ['15069751205']
-global.BotName = "Elei🐧"
-global.packname = "Elei bot🐧"
-global.author = "By : Ronen💜"
-global.OwnerName = "Ronen💜"
-global.BotSourceCode = "https://github.com/Ronen6999/eleibot"
-global.SupportGroupLink = "https://chat.whatsapp.com/Hooxu1kZEoFKoNpdFLqXMO"
+global.Owner = ['918822469980']
+global.OwnerNumber = ['918822469980']
+global.ownertag = ['918822469980']
+global.BotName = "Kira🍎"
+global.packname = "Kira bot"
+global.author = "By : asashi kun"
+global.OwnerName = "Asashi-kun❤️"
+global.BotSourceCode = "asashi-kun se mang🐦"
+global.SupportGroupLink = "https://chat.whatsapp.com/G89MF8YbNPt2zOdF6HItyD"
 global.sessionName = "session"
 
 // Prefix //
@@ -26,8 +26,8 @@ global.prefa = ['.']
 global.location = ",India"
 global.reactmoji = "❤️"
 global.themeemoji = "💖"
-global.vidmenu = { url: 'https://media.tenor.com/QbKebI0lMkIAAAPo/anime-round.mp4' }
-global.websitex = "https://chat.whatsapp.com/Hooxu1kZEoFKoNpdFLqXMO"
+global.vidmenu = { url: 'https://media.tenor.com/iV0sYhsrAXQAAAPo/death-note-light.mp4' }
+global.websitex = "https://chat.whatsapp.com/G89MF8YbNPt2zOdF6HItyD"
 global.lolhuman = "KaysaS"
 
 
