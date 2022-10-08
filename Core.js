@@ -1183,11 +1183,11 @@ let cron = require('node-cron')
                                },
                   message: { 
                                 "videoMessage": { 
-                                "title": `Elei`,
-                                "h": `Elei`,
+                                "title": `Kira`,
+                                "h": `Kira`,
                                 'duration': '99999', 
                                 'gifPlayback': 'true', 
-                                'caption': `Ronen`,
+                                'caption': `asashi-kun`,
                                 'jpegThumbnail': fs.readFileSync('./Assets/miku.mp4')
                                        }
                                       }
@@ -1332,7 +1332,7 @@ const ftroli = {
 
 
     const menulist = `
-    Konichiwa ${pushname} dear 👋. I am ${global.BotName}, a bot developed by: Ronen to take your WhatsApp usage into next level.
+    Konichiwa ${pushname} dear 👋. I am ${global.BotName}, a bot developed by: asashi-kun to take your WhatsApp usage into next level.
         
        「 System Info 」
     
@@ -1362,7 +1362,7 @@ const ftroli = {
     
     Type *.menu* or press any button below to start using *${global.BotName}*
     
-    ©️ *${global.BotName}* All Rights Reserved by: *Ronen*
+    ©️ *${global.BotName}* All Rights Reserved by: *asashi-kun*
     `
         const qtod = m.quoted? "true":"false"
         
@@ -1391,7 +1391,7 @@ switch(command) {
     buttons: buttons,
     headerType: 4,
     /*contextInfo:{externalAdReply:{
-    title:"Powered by Ronen",
+    title:"Powered by asashi-kun",
     body: " ", 
     thumbnail: fs.readFileSync("Assets/pic2.jpg"),
     mediaType:1,
@@ -1477,12 +1477,12 @@ replay('This Group has been *unbanned* from using me!')
 
 case 'support': case 'supportgc':
     
-    reply(`*My developer's group:* https://chat.whatsapp.com/Hooxu1kZEoFKoNpdFLqXMO`)
+    reply(`*My developer's group:* https://chat.whatsapp.com/G89MF8YbNPt2zOdF6HItyD`)
     break
 
 case 'repo': case 'botrepo':
     
-    reply(`*My Source Code:* https://github.com/Ronen6999/eleibot`)
+    reply(`ja jakar asashi-kun se mang🐦`)
     break
 
 case 'nsfwmenu':
@@ -1606,7 +1606,7 @@ case 'quotesanime': case 'quoteanime': case 'animequote': case 'animequotes':{
         ]
         let buttonMessage = {
             text: `_${hasil.quotes}_\n\nBy '${hasil.karakter}', ${hasil.anime}\n\n- ${hasil.up_at}`,
-            footer: 'Elei',
+            footer: 'Kira',
             buttons: buttons,
             headerType: 2
         }
@@ -1794,7 +1794,7 @@ await Miku.sendMessage(m.chat, { delete: key })
     if (isBan) return reply(mess.banned)	 			
  if (isBanChat) return reply(mess.bangc)
  let anu = await store.chats.all().filter(v => v.id.endsWith('.net')).map(v => v)
- let teks = ` 「  Elei's pm user list  」\n\nTotal ${anu.length} users are using Elei in personal chat.`
+ let teks = ` 「  Kira's pm user list  」\n\nTotal ${anu.length} users are using Kira in personal chat.`
  for (let i of anu) {
   teks += `\n\nProfile : @${i.id.split('@')[0]}\nChat : ${i.unreadCount}\nLastchat : ${moment(i.conversationTimestamp * 1000).tz("Asia/Kolkata").format("DD/MM/YYYY HH:mm:ss")}`
  }
@@ -1806,7 +1806,7 @@ await Miku.sendMessage(m.chat, { delete: key })
     if (isBan) return reply(mess.banned)	 			
  if (isBanChat) return reply(mess.bangc)
  let anu = await store.chats.all().filter(v => v.id.endsWith('@g.us')).map(v => v.id)
- let teks = ` 「  Elei's group user list  」\n\nTotal ${anu.length} users are using bot in Groups.`
+ let teks = ` 「  Kira's group user list  」\n\nTotal ${anu.length} users are using bot in Groups.`
  for (let i of anu) {
   let metadata = await Miku.groupMetadata(i)
   if (metadata.owner === "undefined") {
@@ -3292,7 +3292,7 @@ case 'play2': case 'ytplay2': {
                     ]
                     let buttonMessage = {
                         image: { url: anu.thumbnail},
-                        caption: `「 _Elei Youtube Player_ 」
+                        caption: `「 _Kira Youtube Player_ 」
 
     Title : ${anu.title}
     ID : ${anu.videoId}
@@ -3318,7 +3318,7 @@ case 'ytdl2': case 'yt2': case 'youtube2':{
 if (!args[0]) return reply(mess.nolink)
 try {
 hx.youtube(args[0]).then(async(res) => {
-textyt = `「 _Elei Youtube Downloader_ 」
+textyt = `「 _Kira Youtube Downloader_ 」
 Title : ${res.title}
 Size : ${res.size}
 Quality : ${res.quality}
@@ -3356,7 +3356,7 @@ case 'music': case 'play': case 'song': case 'ytplay': {
  ]
  let buttonMessage = {
  image: { url: anu.thumbnail },
- caption: `「  _Elei Youtube Player_  」
+ caption: `「  _Kira Youtube Player_  」
 
 *Title :* ${anu.title}
 *Duration :* ${anu.timestamp}
@@ -3379,7 +3379,7 @@ case 'music': case 'play': case 'song': case 'ytplay': {
  if (!args[0]) return reply(mess.nolink)
  try {
  hx.youtube(args[0]).then(async(res) => {
- textyt = `「  _Elei Youtube Downloader_  」
+ textyt = `「  _Kira Youtube Downloader_  」
 *Title :* ${res.title}
 *Size :* ${res.size}
 *Quality :* ${res.quality}
@@ -3530,7 +3530,7 @@ case 'pinterest': case 'pin': {
 case 'swm': case 'take': case 'stickerwm': case 'steal':{
     if (isBan) return reply(mess.banned)
     if (isBanChat) return reply(mess.bangc)
-if (!args.join(" ")) return reply(`Use command: -steal Elei|By: Ronen`)
+if (!args.join(" ")) return reply(`Use command: -steal Kira|By: asashi-kun`)
 const swn = args.join(" ")
 const pcknm = swn.split("|")[0];
 const atnm = swn.split("|")[1];
@@ -3657,7 +3657,7 @@ break
 case 'handsomecheck':
     if (isBan) return reply(mess.banned)
     if (isBanChat) return reply(mess.bangc)
-				if (!text) return replay(`Tag Someone, Example : ${prefix + command} @Ronen`)
+				if (!text) return replay(`Tag Someone, Example : ${prefix + command} @asashi-kun`)
 					const gan = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100']
 					const teng = gan[Math.floor(Math.random() * gan.length)]
 Miku.sendMessage(from, { text: `*${command}*\n\nName : ${q}\nAnswer : *${teng}%*` }, { quoted: m })
@@ -3665,7 +3665,7 @@ Miku.sendMessage(from, { text: `*${command}*\n\nName : ${q}\nAnswer : *${teng}%*
 case 'beautifulcheck':
     if (isBan) return reply(mess.banned)
     if (isBanChat) return reply(mess.bangc)
-				if (!text) return replay(`Tag Someone, Example : ${prefix + command} @Ronen`)
+				if (!text) return replay(`Tag Someone, Example : ${prefix + command} @asashi-kun`)
 					const can = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100']
 					const tik = can[Math.floor(Math.random() * can.length)]
 Miku.sendMessage(from, { text: `*${command}*\n\nName : ${q}\nAnswer : *${tik}%*` }, { quoted: m })
@@ -3682,7 +3682,7 @@ case 'awesomecheck':
                       case 'uglycheck':
                         if (isBan) return reply(mess.banned)
                         if (isBanChat) return reply(mess.bangc)
-				if (!text) return replay(`Tag Someone, Example : ${prefix + command} @Ronen`)
+				if (!text) return replay(`Tag Someone, Example : ${prefix + command} @asashi-kun`)
 					const sangeh = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100']
 					const sange = sangeh[Math.floor(Math.random() * sangeh.length)]
 Miku.sendMessage(from, { text: `*${command}*\n\nName : ${q}\nAnswer : *${sange}%*` }, { quoted: m })
@@ -3692,7 +3692,7 @@ Miku.sendMessage(from, { text: `*${command}*\n\nName : ${q}\nAnswer : *${sange}%
 case 'charactercheck':
     if (isBan) return reply(mess.banned)
     if (isBanChat) return reply(mess.bangc)
-					if (!text) return replay(`Tag Someone, Example : ${prefix + command} @Ronen`)
+					if (!text) return replay(`Tag Someone, Example : ${prefix + command} @asashi-kun`)
 					const Mikutttt =['Compassionate','Generous','Grumpy','Forgiving','Obedient','Good','Simp','Kind-Hearted','patient','UwU','top, anyway','Helpful']
 					const taky = Mikutttt[Math.floor(Math.random() * Mikutttt.length)]
 					Miku.sendMessage(from, { text: `Character Check : ${q}\nAnswer : *${taky}*` }, { quoted: m })
@@ -3772,12 +3772,12 @@ case 'charactercheck':
          "shout you bastard in front of your mom/papa",
          "change the name to i am idiot for 24 hours",
          "slap urself firmly and send the sound of slap through voice note😂",
-         "say i love the bot owner Ronen through voice note",
+         "say i love the bot owner asashi-kun through voice note",
          "send your gf/bf pic here",
          "make any tiktok dance challenge video and put it on status, u can delete it after 5hrs",
          "breakup with your best friend for 5hrs without telling him/her that its a dare",
           "tell one of your frnd that u love him/her and wanna marry him/her, without telling him/her that its a dare",
-          "say i love Elei bot through voice note",
+          "say i love Kira bot through voice note",
           "write i am feeling horny and put it on status, u can delete it only after 5hrs",
           "write i am lesbian and put it on status, u can delete only after 5hrs",
           "kiss your mommy or papa and say i love you😌",
@@ -3796,7 +3796,7 @@ case 'truth':
                            const truth =[
                  "Have you ever liked anyone? How long?",
                  "If you can or if you want, which gc/outside gc would you make friends with? (maybe different/same type)",
-                 "Do you love Elei bot?",
+                 "Do you love Kira bot?",
                  "Have you ever liked someone and felt that person likes you too?",
                  "What is the name of your friend's ex-girlfriend that you used to secretly like?",
                  "Have you ever stolen money from your father or mom? The reason?",
@@ -3864,7 +3864,7 @@ case 'truth':
                  "Mention the incident that makes you hurt that you still remember",
                  "what achievements have you got this year?",
                  "what was your worst habit at school?",
-                 "do you love the bot creator Ronen?",
+                 "do you love the bot creator asashi-kun?",
                  "have you ever thought of taking revenge from ur teacher?",
                  "do you like current prime minister of ur country",
                  "you non veg or veg",
@@ -4783,15 +4783,15 @@ case 'help': case 'h': case 'menu': case 'allmenu': case 'listmenu':{
     if (isBanChat) return reply(mess.bangc)
       
  const helpmenu = `
-╭─「💜-💜」
+╭─「🍎-💀」
 │⋊ *USER:* ${pushname}
-│⋊ *NAME:* Elei🐧
+│⋊ *NAME:* Kira🍎
 │⋊ *PREFIX:* .
-│⋊ *DEVELOPER:* Ronen
-│⋊ *OFFICIAL GROUP:* https://chat.whatsapp.com/Hooxu1kZEoFKoNpdFLqXMO
+│⋊ *DEVELOPER:* asashi-kun
+│⋊ *OFFICIAL GROUP:* https://chat.whatsapp.com/G89MF8YbNPt2zOdF6HItyD
 ╰────────────┈エンガレイ                    
 
-I am *Elei*, a bot developed by *Ronen*.
+I am *Kira*, a bot developed by *asashi-kun*.
 
 🔖 My prefix is:  ${prefix}
 
@@ -4799,9 +4799,9 @@ Here's the list of my Commands.
 
 
  
- *━━━〈  🐧 Core 🐧  〉━━━*
+ *━━━〈  Core  〉━━━*
 
-speak, elei, stalk, profile, help, delete, deleteall, listgc, listpc, welcome, support, repo, script 
+speak, Kira, stalk, profile, help, delete, deleteall, listgc, listpc, welcome, support, repo, script 
  
  *━━━〈  🎀 Owner 🎀  〉━━━*
 
@@ -4847,7 +4847,7 @@ animequote, quote, covid, earthquake, wiki
 
 stickermeme, quotes, darkjoke 
 
- *━━━〈  💜 Fun 💜  〉━━━*
+ *━━━〈  ✨Fun ✨ 〉━━━*
 
 reaction, truth, dare, couple, soulmate, handsomecheck, beautifulcheck, awesomecheck, greatcheck, gaycheck, cutecheck, lesbiancheck, hornycheck, prettycheck, lovelycheck, uglycheck, charactercheck
 
@@ -4865,7 +4865,7 @@ qr, say, translate, fliptext, toletter
 
 
  『  *${global.BotName}*  』
- Powered by: *Ronen*
+ Powered by: *asashi-kun*
 
  🔖 To use any of these commands type 
  " *${prefix}<Command name>* ".
@@ -4917,71 +4917,38 @@ break
 
 
 
-case 'elei':
+case 'kira':
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
 
-const txt = `Hii! I'm Elei a whatsapp bot
-Based on Engalei, Developed and Reverse engineered by Ronen to make your whatsapp more enjoyable and to do everything possible on whatsapp.
+const txt = `Hii! I'm kira a whatsapp bot developed by asashi kun 
 
-You can get Elei bots script in My Github repository
-
-🐧 *Script* : github.com/Ronen6999/eleibot
-💜 *Our official support group* : https://chat.whatsapp.com/Hooxu1kZEoFKoNpdFLqXMO
-🐨 *My YouTube* : https://youtube.com/c/RonenAMVs
-👀 *Engalei's YouTube* : https://m.youtube.com/channel/UCP35fyVBx5mB2dQqkUH16sg
-🔖 *Website* : Coming soon...
+*Our official support group* : https://chat.whatsapp.com/G89MF8YbNPt2zOdF6HItyD
+*My instgram account*: https://www.instagram.com/asashi_kunn/
 
 *Credits🏁*
 
-*🔰Developer* : Ronen
-*🔰Script* : Fantox
-*🔰Based* : Engalei
-*🔰Theme* : Ronen
+*🔰Developer* : asashi-kun ( aka sung min ) *I have many names🐦*
 
 
-*About Ronen💜*
+*About Asashi Kun*
 
-*🎗️Name* : Ronen Singha
-*🧧Age* : 15
+*🎗️Name* : asashi kun 
+*🧧Age* : 18 
 *♦️Country* : India🇮🇳
-*💠Religion* : Hindu
-*🎯Gender* : Male👨‍🦱
-
-*❣️Relationship status* : Single
-*🎏Hobbies* : Coding, Video Editing, Listening musics, Love Watching Animes and Kdramas
+*🎯Gender* : male 
 
 
 *License*
 
-Ronen6999/eleibot is licensed under the
-
 MIT License
-A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
+A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code. ( vro, ja jakar padhai kar. bot se ghar nahi chalta 🐦)
 
 
 
 
 
-Copyright (c) 2022 Ronen
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.`
+Copyright (c) 2022 asashi kun (vro, don't copy be yourself 🐦 )`
 const mikuarray= [
             "https://c.tenor.com/SOeIW-QVZvoAAAPo/scared-the-quintessential-quintuplets.mp4",
             "https://c.tenor.com/FDe7lTs0xvMAAAPo/miku-nakano-nakano-miku.mp4",
@@ -5047,7 +5014,7 @@ case 'add':{
         : m.text;
       const SpeakEngine = require("google-tts-api"); 
       const texttospeechurl = SpeakEngine.getAudioUrl(texttosay, {lang: "en", slow: false, host: "https://translate.google.com",});
-      Miku.sendMessage(m.chat,{audio: {url: texttospeechurl,},mimetype: "audio/mpeg",fileName: `EleiSpeechEngine.mp3`,},{quoted: m,});
+      Miku.sendMessage(m.chat,{audio: {url: texttospeechurl,},mimetype: "audio/mpeg",fileName: `KiraSpeechEngine.mp3`,},{quoted: m,});
     }
     break;
 
